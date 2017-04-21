@@ -1,3 +1,13 @@
+## Travis CI
+### master
+[![Build Status](https://travis-ci.org/germanolleunlp/create-react-app.svg?branch=master)](https://travis-ci.org/germanolleunlp/create-react-app)
+
+### staging
+[![Build Status](https://travis-ci.org/germanolleunlp/create-react-app.svg?branch=staging)](https://travis-ci.org/germanolleunlp/create-react-app)
+
+### production
+[![Build Status](https://travis-ci.org/germanolleunlp/create-react-app.svg?branch=production)](https://travis-ci.org/germanolleunlp/create-react-app)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

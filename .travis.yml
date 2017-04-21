@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "7.7.2"
+script:
+  - npm install
+  - CI=true npm run test
+before_deploy:
+  - npm run build
+deploy:
+  - provider: firebase
+    skip_cleanup: true
+    project: "create-react-app-prod"
+    token:
+      secure: $FIREBASE_TOKEN
+    on:
+      branch: production
+  - provider: firebase
+    skip_cleanup: true
+    project: "create-react-app-stg"
+    token:
+      secure: $FIREBASE_TOKEN
+    on:
+      branch: staging
